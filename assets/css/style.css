@@ -101,6 +101,14 @@ body {
     background-image: url("../images/calculator.jpg");
     background-size: cover;
     background-position: center; }
+  #portfolio .project5 {
+    background-image: url("../images/weather.jpg");
+    background-size: cover;
+    background-position: center; }
+  #portfolio .project6 {
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    background-position: center; }
 
 #skills {
   padding-top: 5rem; }
