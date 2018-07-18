@@ -1,0 +1,160 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  font-family: 'Lato', sans-serif; }
+
+.blue-text {
+  color: #34a5da; }
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden; }
+
+#mojHeader {
+  padding: 0;
+  height: 100vh;
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  #mojHeader .navbar {
+    padding-top: 15px; }
+    #mojHeader .navbar .navbar-brand {
+      color: #34a5da;
+      margin-left: 30px; }
+    #mojHeader .navbar .myToggler {
+      margin-right: 20px; }
+      #mojHeader .navbar .myToggler i {
+        color: white;
+        font-size: 25px; }
+    #mojHeader .navbar .navbar-nav a {
+      color: #fff;
+      padding-left: 30px;
+      font-size: 1.3rem; }
+      #mojHeader .navbar .navbar-nav a:hover {
+        color: #34a5da; }
+  #mojHeader .row {
+    position: relative;
+    top: 50%; }
+    #mojHeader .row h2 {
+      font-size: 4rem; }
+  #mojHeader .mask {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); }
+
+#aboutMe {
+  padding-top: 5rem; }
+  #aboutMe .slikaDesno img {
+    -webkit-box-shadow: 5px 5px 15px #000;
+    box-shadow: 5px 5px 15px #000; }
+  #aboutMe p {
+    font-size: 20px; }
+
+#portfolio {
+  background-color: #f7f7f7;
+  padding-top: 5rem; }
+  #portfolio .projects {
+    width: 80%;
+    height: 250px;
+    -webkit-box-shadow: 5px 5px 15px 1px #000;
+    box-shadow: 5px 5px 15px 1px #000; }
+    #portfolio .projects:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+    #portfolio .projects h2 {
+      font-size: 1.4rem; }
+  #portfolio .naslov {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 20px; }
+    #portfolio .naslov a {
+      color: #fff; }
+      #portfolio .naslov a:hover {
+        text-decoration: none;
+        color: #34a5da; }
+  #portfolio .project1 {
+    background-image: url("../images/sara.jpg");
+    background-size: cover;
+    background-position: center; }
+  #portfolio .project2 {
+    background-image: url("../images/web.jpg");
+    background-size: cover;
+    background-position: center; }
+  #portfolio .project3 {
+    background-image: url("../images/kviz.jpg");
+    background-size: cover;
+    background-position: center; }
+  #portfolio .project4 {
+    background-image: url("../images/calculator.jpg");
+    background-size: cover;
+    background-position: center; }
+
+#skills {
+  padding-top: 5rem; }
+  #skills .progress {
+    height: 25px;
+    -webkit-box-shadow: 5px 5px 10px #000;
+    box-shadow: 5px 5px 10px #000; }
+  #skills .progress-bar {
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    width: 0;
+    background: #34a5da; }
+  #skills .first {
+    max-width: 70%;
+    cursor: pointer; }
+    #skills .first:hover {
+      border: 2px solid gray; }
+  #skills .modal.fade .modal-content .close {
+    font-size: 2.5rem; }
+  #skills .modal.fade .modal-content .modal-body {
+    padding: 0; }
+
+#contact {
+  background-color: #f7f7f7; }
+  #contact i {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #34a5da; }
+  #contact a {
+    text-decoration: none; }
+  #contact p {
+    font-size: 20px; }
+  #contact a i {
+    margin: 0;
+    font-size: 40px; }
+  #contact a .fas {
+    background-color: transparent;
+    float: right;
+    margin-right: 30px; }
+
+footer {
+  background-color: #000; }
+
+@media screen and (max-width: 992px) {
+  #aboutMe .slikaDesno {
+    margin-top: 30px; }
+  #skills .progress-bar {
+    width: 80%; }
+    #skills .progress-bar[aria-valuenow="70"] {
+      width: 70%; } }
+
+@media screen and (max-width: 425px) {
+  #mojHeader .row h2 {
+    font-size: 3rem; }
+  #mojHeader .row h1 {
+    font-size: 2rem; } }
