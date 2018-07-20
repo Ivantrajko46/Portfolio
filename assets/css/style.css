@@ -25,11 +25,15 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  #mojHeader .fixed-top {
+    right: 16px !important; }
   #mojHeader .navbar {
-    padding-top: 15px; }
+    padding-top: 15px;
+    padding-bottom: 0; }
     #mojHeader .navbar .navbar-brand {
       color: #34a5da;
-      margin-left: 30px; }
+      margin-left: 30px;
+      padding: 0; }
     #mojHeader .navbar .myToggler {
       margin-right: 20px; }
       #mojHeader .navbar .myToggler i {
@@ -60,31 +64,27 @@ body {
     -webkit-box-shadow: 5px 5px 15px #000;
     box-shadow: 5px 5px 15px #000; }
   #aboutMe p {
+    padding: 5px;
     font-size: 20px; }
 
 #portfolio {
   background-color: #f7f7f7;
   padding-top: 5rem; }
-  #portfolio .projects {
+  #portfolio a {
     width: 80%;
+    text-decoration: none; }
+  #portfolio .projects {
+    width: 100%;
     height: 250px;
     -webkit-box-shadow: 5px 5px 15px 1px #000;
     box-shadow: 5px 5px 15px 1px #000; }
-    #portfolio .projects:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1); }
     #portfolio .projects h2 {
       font-size: 1.4rem; }
   #portfolio .naslov {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
-    padding: 20px; }
-    #portfolio .naslov a {
-      color: #fff; }
-      #portfolio .naslov a:hover {
-        text-decoration: none;
-        color: #34a5da; }
+    padding: 20px;
+    color: #fff; }
   #portfolio .project1 {
     background-image: url("../images/sara.jpg");
     background-size: cover;
@@ -165,4 +165,6 @@ footer {
   #mojHeader .row h2 {
     font-size: 3rem; }
   #mojHeader .row h1 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  #aboutMe p {
+    font-size: 16px; } }
