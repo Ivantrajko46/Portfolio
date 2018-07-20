@@ -20,6 +20,7 @@
     body {
         margin: 0;
         width: 100vw;
+        height: 100%;</div>
         overflow-x: hidden;
     }
 
@@ -33,16 +34,14 @@
             attachment: fixed;
         }
 
-        .fixed-top {
-            right: 16px !important;
-        }
         .navbar {
             padding-top: 15px;
             padding-bottom: 0;
+
             .navbar-brand {
                 color: $blue;
                 margin-left: 30px;
-                padding:0;
+                padding: 0;
             }
             .myToggler {
                 margin-right: 20px;
@@ -111,11 +110,9 @@
         .projects {
             width: 100%;
             height: 250px;
-            box-shadow: 5px 5px 15px 1px #000;
-            // &:hover {
+            box-shadow: 5px 5px 15px 1px #000; // &:hover {
             //     transform: scale(1.1);
             // }
-
             h2 {
                 font: {
                     size: 1.4rem;
@@ -128,7 +125,6 @@
             width: 100%;
             padding: 20px;
             color: #fff;
-
         }
         .project1 {
             background: {
@@ -252,6 +248,7 @@
     }
 
     @media screen and (max-width:992px) {
+
         #aboutMe {
             .slikaDesno {
                 margin-top: 30px;
@@ -277,7 +274,7 @@
                 }
                 h1 {
                     font: {
-                        size:2rem;
+                        size: 2rem;
                     }
                 }
             }

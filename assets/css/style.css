@@ -16,6 +16,7 @@ a {
 body {
   margin: 0;
   width: 100vw;
+  height: 100%;
   overflow-x: hidden; }
 
 #mojHeader {
@@ -25,8 +26,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
-  #mojHeader .fixed-top {
-    right: 16px !important; }
   #mojHeader .navbar {
     padding-top: 15px;
     padding-bottom: 0; }
