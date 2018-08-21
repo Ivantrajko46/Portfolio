@@ -109,6 +109,10 @@ body {
     background-image: url("../images/air.jpg");
     background-size: cover;
     background-position: center; }
+  #portfolio .project7 {
+    background-image: url("../images/orange.jpg");
+    background-size: cover;
+    background-position: center; }
 
 #skills {
   padding-top: 5rem; }
