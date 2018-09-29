@@ -193,6 +193,8 @@ footer {
       width: 70%; } }
 
 @media screen and (max-width: 425px) {
+  p {
+    font-size: 16px !important; }
   #mojHeader .row h2 {
     font-size: 3rem; }
   #mojHeader .row h1 {
