@@ -1,3 +1,7 @@
+    $blue: #34a5da;
+
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
     body,
     h1,
     h2,
@@ -11,10 +15,11 @@
         font-family: 'Lato', sans-serif;
     }
 
-    $blue: #34a5da;
-
     .blue-text {
         color: $blue;
+    }
+    .row {
+        margin: 0;
     }
 
      body {
@@ -23,7 +28,11 @@
         width: 100vw;
         height: 100%;
         overflow-x: hidden;
+        background-color: #bdbdbd;
     }
+    body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1s;
+}
 
     #mojHeader {
         padding: 0;
@@ -60,7 +69,7 @@
                     color: #fff;
                     padding-left: 30px;
                     font: {
-                        size: 1.3rem;
+                        size: 1.2rem;
                     }
                     &:hover {
                         color: $blue;
@@ -85,7 +94,6 @@
             background-color: rgba(0, 0, 0, .7);
         }
     }
-
     #aboutMe {
         padding-top: 5rem;
         .slikaDesno {
@@ -100,7 +108,6 @@
             }
         }
     }
-
     #portfolio {
         background-color: #f7f7f7;
         padding-top: 5rem;
@@ -179,19 +186,31 @@
                 position: center;
             }
         }
+        .project8 {
+           background: {
+                image: url("../images/wordpress_site.jpg");
+                size: cover;
+                position: center;
+            } 
+        }
     }
-
     #skills {
         padding-top: 5rem;
         .progress {
             height: 25px;
-            box-shadow: 5px 5px 10px #000;
+            box-shadow: 3px 3px 15px #000;
         }
 
         .progress-bar {
             transition: 2s;
-            width: 0;
+            width: 80%;
             background: $blue;
+        }
+        .sixty {
+            width: 60%;
+        }
+        .seventy {
+            width: 70%;
         }
 
         .first {
@@ -215,9 +234,17 @@
             }
         }
     }
-
     #contact {
-        background-color: #f7f7f7;
+        background:{
+            image: url('../images/contact-us.jpg');
+            size: cover;
+            position: center;
+            attachment: fixed;
+        };
+        .background-contact {
+            background-color: rgba(0,0,0,.7);
+            padding: 15px;
+        }
         i {
             margin-right: 20px;
             font: {
@@ -227,6 +254,7 @@
         }
         a {
             text-decoration: none;
+            color:$blue;
         }
         p {
             font: {
@@ -234,7 +262,6 @@
             }
         }
         a {
-
             i {
                 margin: 0;
                 font: {
@@ -242,19 +269,19 @@
                 }
             }
             .fas {
-                background-color: transparent;
+                padding: 5px;
+                background-color: #bdbdbd;
                 float: right;
                 margin-right: 30px;
+                opacity: 0.9;
             }
         }
     }
-
     footer {
         background: {
             color: #000;
         }
     }
-
     @media screen and (max-width:992px) {
 
         #aboutMe {
@@ -271,7 +298,6 @@
             }
         }
     }
-
     @media screen and (max-width:425px) {
         #mojHeader {
             .row {

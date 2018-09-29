@@ -13,10 +13,11 @@ $(function() {
         }
     });
 
+
     $("a.nav-item").click(function() {
         $("button.myToggler").trigger("click");
     });
-    //SCROLL ANIMATION FOR NALBAR LINKS
+    //SCROLL ANIMATION FOR NAVBAR LINKS
 
     $(".navbar-nav a[href^='#").click(function(e) {
         e.preventDefault(); //
@@ -34,26 +35,22 @@ $(function() {
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });
 
-    // PROGRESS BAR HOVER
-    $('#skills').mouseover(function(e) {
-        $('div.progress-bar[aria-valuenow="80"]').css("width", "80%");
-        $('div.progress-bar[aria-valuenow="70"]').css("width", "70%");
-    });
-    $('#skills').mouseout(function(e) {
-        $('div.progress-bar[aria-valuenow="80"]').css("width", "");
-        $('div.progress-bar[aria-valuenow="70"]').css("width", "");
-    });
 
     // PORTFOLIO PROJECTS HOVER
-    $("div .projects").each(function(index, item) {
+    $("div .projects").each(function(index, item) {   
         $(this).on('mouseover', function(e) {
+            // let aboutProject = $(e.target.lastElementChild);
             $(item).addClass("animated");
             $(item).addClass("jello");
+            // $(aboutProject).slideDown();
+            // console.log($(this));
 
         });
         $(this).on('mouseout', function(e) {
+            // let aboutProject = $(e.target.lastElementChild);
             $(item).removeClass("animated");
             $(item).removeClass("jello");
+            // $(aboutProject).slideUp();
 
 
         });
