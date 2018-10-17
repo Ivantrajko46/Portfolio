@@ -34,7 +34,7 @@
     transition-duration: 1s;
 }
 
-    #mojHeader {
+    #myHeader {
         padding: 0;
         height: 100vh;
         background: {
@@ -43,6 +43,7 @@
             position: center;
             attachment: fixed;
         }
+        // clip-path: polygon(0 0%, 100% 0%, 100% 94%, 0 100%);
 
         .navbar {
             padding-top: 15px;
@@ -111,6 +112,7 @@
     #portfolio {
         background-color: #f7f7f7;
         padding-top: 5rem;
+        // clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 100%);
         a {
             width: 80%;
             text-decoration: none;
@@ -193,9 +195,16 @@
                 position: center;
             } 
         }
+        .project9 {
+           background: {
+                image: url("../images/jamesmathilda.jpg");
+                size: cover;
+                position: center;
+            } 
+        }
     }
     #skills {
-        padding-top: 5rem;
+        padding-top: 2rem;
         .progress {
             height: 25px;
             box-shadow: 3px 3px 15px #000;
@@ -298,11 +307,16 @@
             }
         }
     }
+     @media screen and (max-width:768px) {
+        #portfolio {
+            clip-path: initial;
+        }
+    }
     @media screen and (max-width:425px) {
         p {
             font-size: 16px !important;
         }
-        #mojHeader {
+        #myHeader {
             .row {
                 h2 {
                     font: {

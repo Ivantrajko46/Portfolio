@@ -30,37 +30,37 @@ body[data-aos-duration="400"] [data-aos] {
   -o-transition-duration: 1s;
   transition-duration: 1s; }
 
-#mojHeader {
+#myHeader {
   padding: 0;
   height: 100vh;
   background-image: url("../images/1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
-  #mojHeader .navbar {
+  #myHeader .navbar {
     padding-top: 15px;
     padding-bottom: 0; }
-    #mojHeader .navbar .navbar-brand {
+    #myHeader .navbar .navbar-brand {
       color: #34a5da;
       margin-left: 30px;
       padding: 0; }
-    #mojHeader .navbar .myToggler {
+    #myHeader .navbar .myToggler {
       margin-right: 20px; }
-      #mojHeader .navbar .myToggler i {
+      #myHeader .navbar .myToggler i {
         color: white;
         font-size: 25px; }
-    #mojHeader .navbar .navbar-nav a {
+    #myHeader .navbar .navbar-nav a {
       color: #fff;
       padding-left: 30px;
       font-size: 1.2rem; }
-      #mojHeader .navbar .navbar-nav a:hover {
+      #myHeader .navbar .navbar-nav a:hover {
         color: #34a5da; }
-  #mojHeader .row {
+  #myHeader .row {
     position: relative;
     top: 50%; }
-    #mojHeader .row h2 {
+    #myHeader .row h2 {
       font-size: 4rem; }
-  #mojHeader .mask {
+  #myHeader .mask {
     padding: 0;
     margin: 0;
     position: absolute;
@@ -127,9 +127,13 @@ body[data-aos-duration="400"] [data-aos] {
     background-image: url("../images/wordpress_site.jpg");
     background-size: cover;
     background-position: center; }
+  #portfolio .project9 {
+    background-image: url("../images/jamesmathilda.jpg");
+    background-size: cover;
+    background-position: center; }
 
 #skills {
-  padding-top: 5rem; }
+  padding-top: 2rem; }
   #skills .progress {
     height: 25px;
     -webkit-box-shadow: 3px 3px 15px #000;
@@ -192,12 +196,17 @@ footer {
     #skills .progress-bar[aria-valuenow="70"] {
       width: 70%; } }
 
+@media screen and (max-width: 768px) {
+  #portfolio {
+    -webkit-clip-path: initial;
+    clip-path: initial; } }
+
 @media screen and (max-width: 425px) {
   p {
     font-size: 16px !important; }
-  #mojHeader .row h2 {
+  #myHeader .row h2 {
     font-size: 3rem; }
-  #mojHeader .row h1 {
+  #myHeader .row h1 {
     font-size: 2rem; }
   #aboutMe p {
     font-size: 16px; } }
