@@ -139,7 +139,7 @@
 
         .project2 {
             background: {
-                image: url("../images/web.jpg");
+                image: url("../images/blog.jpg");
                 size: cover;
                 position: center;
             }
@@ -176,14 +176,14 @@
         }
         .project7 {
             background: {
-                image: url("../images/orange.jpg");
+                image: url("../images/birra.jpg");
                 size: cover;
                 position: center;
             }
         }
         .project8 {
            background: {
-                image: url("../images/wordpress_site.jpg");
+                image: url("../images/graxpo.jpg");
                 size: cover;
                 position: center;
             } 
@@ -198,22 +198,6 @@
     }
     #skills {
         padding-top: 5rem;
-        .progress {
-            height: 25px;
-            box-shadow: 3px 3px 15px #000;
-        }
-
-        .progress-bar {
-            transition: 2s;
-            width: 80%;
-            background: $blue;
-        }
-        .sixty {
-            width: 60%;
-        }
-        .seventy {
-            width: 70%;
-        }
 
         .first {
             max-width: 70%;
@@ -299,10 +283,20 @@
                 }
             }
         }
+        #skills{
+            img {
+                height: 250px;
+            }
+        }
     }
      @media screen and (max-width:768px) {
         #portfolio {
             clip-path: initial;
+        }
+        #skills{
+            img {
+                height: 200px;
+            }
         }
     }
     @media screen and (max-width:425px) {
@@ -330,4 +324,10 @@
                 }
             }
         }
+        #skills{
+            img {
+                height: 150px;
+            }
+        }
+
     }
