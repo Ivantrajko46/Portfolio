@@ -1,5 +1,16 @@
 $(function() {
 
+    let showText = function(target, message, index, interval) {
+        if (index < message.length) {
+            $(target).append(message[index++]);
+            setTimeout(function() { 
+                showText(target, message, index, interval); 
+            }, interval);
+        }
+    }
+    $(function() {
+        showText("#fe_dev", "Frontend Web Developer", 0, 150);
+    });
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -34,7 +45,7 @@ $(function() {
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });
     // PORTFOLIO PROJECTS HOVER
-    $("div .projects").each(function(index, item) {   
+    $("div .projects").each(function(index, item) {
         $(this).on('mouseover', function(e) {
             // let aboutProject = $(e.target.lastElementChild);
             $(item).addClass("animated");
